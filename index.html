@@ -4,9 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" >
     <title>Calculator</title>
 </head>
 <body>
-    
+    <main class="main">
+        <div id="container">
+            <div class="screen">0</div>
+            <div class="buttons">
+                <div class="row">
+                    <button id="clear">AC</button>
+                    <button id="delete">C</button>
+                </div>
+                <div class="row">
+                    <button class ="number" value= "7">7</button>
+                    <button class ="number" value="8">8</button>
+                    <button class ="number" value="9">9</button>
+                    <button class="operator" value="/">÷</button>
+            
+                </div>
+                <div class="row">
+                    <button class ="number" value="4">4</button>
+                    <button class ="number" value="5">5</button>
+                    <button class ="number" value="6">6</button>
+                    <button class="operator" value="+">+</button>
+                </div>
+                <div class="row">
+                    <button class ="number" value="1">1</button>
+                    <button class ="number" value="2">2</button>
+                    <button class ="number" value="3">3</button>
+                    <button class="operator" value="-">-</button>
+                </div>
+                <div class="row">
+                    <button class ="number" value="0">0</button>
+                    <button class="decimal" value=".">.</button>
+                    <button class="equal" value="=">=</button>
+                    <button class="operator" value="x">x</button>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
