@@ -1,0 +1,82 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: lightsteelblue;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main {
+    background-image: linear-gradient(to bottom, #868b9e, #565c6c);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.screen {
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    text-align: right;
+    font-size: 1.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 15px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover,
+#clear:hover,
+#delete:hover {
+    background-color: #ddd;
+}
+
+#clear {
+    background-color: #095161;
+    color: #fff;
+}
+
+#delete {
+    background-color: #095161;
+    color: #fff;
+}
+
+
+.number, .decimal, .equal {
+    background-color: #36b8d4;
+    color: #fff;
+}
+
+.operator {
+    background-color: #e1f0f5;
+}
