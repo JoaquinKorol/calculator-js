@@ -11,7 +11,7 @@ let num1 = "";
 let num2 = "";
 let operator = "";
 let result;
-const oper = ["+", "-", "/", "x"]
+const oper = ["+", "-", "/", "*"]
 
 function add(a, b) {
     return a + b;
@@ -42,7 +42,7 @@ function operate(num1, operator, num2) {
         case "-":
             result = subtract(num1, num2);
             break;
-        case "x":
+        case "*":
             result = multiply(num1, num2);
             break;
         case "/":
@@ -92,6 +92,7 @@ numbers.forEach(number => {
         }
         
         updateScreen();
+        number.blur();
     })
 })
 
